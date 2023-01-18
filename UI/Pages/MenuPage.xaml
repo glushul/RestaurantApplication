@@ -1,0 +1,46 @@
+﻿<Page x:Class="RestaurantApp.UI.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:RestaurantApp.UI.Pages"
+      xmlns:uc="clr-namespace:RestaurantApp.Tools"
+      mc:Ignorable="d" 
+      d:DesignHeight="690" d:DesignWidth="1118" FontFamily="Segoe UI">
+    <Grid>
+        <Grid x:Name="grid" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="90"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" x:Name="gridFirst">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <uc:MenuElement ImageSource="Images/pasta.png" TextSource="Паста Карбонара"
+                                PriceSource="410 руб." PriceSourceInt="410" Grid.Column="0" VerticalAlignment="Center"></uc:MenuElement>
+                <uc:MenuElement ImageSource="Images/eggsalad.png" TextSource="Салат с яйцом пашот"
+                                PriceSource="350 руб." PriceSourceInt="350" Grid.Column="1" VerticalAlignment="Center"></uc:MenuElement>
+                <uc:MenuElement ImageSource="Images/chickensoup.png" TextSource="Куриный суп"
+                                PriceSource="300 руб." PriceSourceInt="300" Grid.Column="2" VerticalAlignment="Center"></uc:MenuElement>
+            </Grid>
+            <Grid Grid.Row="1" x:Name="gridSecond">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <uc:MenuElement ImageSource="Images/pancakes.png" TextSource="Панкейки с ягодами" PriceSource="390 руб."
+                                PriceSourceInt="390" Grid.Column="0" VerticalAlignment="Center"></uc:MenuElement>
+                <uc:MenuElement ImageSource="Images/eggbread.png" TextSource="Брускетта с яйцом пашот"
+                                PriceSource="330 руб." PriceSourceInt="330" Grid.Column="1" VerticalAlignment="Center"></uc:MenuElement>
+                <uc:MenuElement ImageSource="Images/shrimpsalad.png" TextSource="Салат с креветками"
+                                PriceSource="450 руб." PriceSourceInt="450" Grid.Column="2" VerticalAlignment="Center"></uc:MenuElement>
+            </Grid>
+            <Button x:Name="makeOrderButton" Grid.Row="2" Width="460" Height="60" FontSize="32" Background="#FFCDB47F" Foreground="White" Click="ButtonSend_Click" HorizontalAlignment="Right">ОФОРМИТЬ ЗАКАЗ</Button>
+        </Grid>
+    </Grid>
+</Page>
