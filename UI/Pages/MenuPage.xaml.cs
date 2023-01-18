@@ -57,8 +57,11 @@ namespace RestaurantApp.UI.Pages
                     }
                 }
             }
-            CheckoutWindow checkoutWindow = new CheckoutWindow(checkInfo);
-            checkoutWindow.Show();
+            if(checkInfo != "")
+            {
+                CheckoutWindow checkoutWindow = new CheckoutWindow(checkInfo);
+                checkoutWindow.Show();
+            }
         }
     }
 }
