@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="CheckoutWindow" Height="600" Width="800" FontFamily="Segoe UI"
         MaxHeight="600" MaxWidth="800"
-        MinHeight="600" MinWidth="800" WindowStartupLocation="CenterScreen">
+        MinHeight="600" MinWidth="800" WindowStartupLocation="CenterScreen" Icon="/UI/Windows/cartIcon.png">
     <Grid Background="#FFF1EEEA">
         <Grid>
             <Grid.RowDefinitions>
@@ -23,7 +23,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" FontSize="24">Имя:</TextBlock>
-                <TextBox x:Name="nameTextBox" Grid.Column="1" Margin="0,24,25,24" HorizontalContentAlignment="Center" FontSize="24"></TextBox>
+                <TextBox x:Name="nameTextBox" Grid.Column="1" Margin="0,24,25,24" FontSize="24"></TextBox>
             </Grid>
             <Grid Grid.Row="1">
                 <Grid.ColumnDefinitions>
@@ -31,7 +31,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" FontSize="24">Телефон:</TextBlock>
-                <TextBox x:Name="phoneTextBox" Grid.Column="1" Margin="0,24,25,24" HorizontalContentAlignment="Center" FontSize="24"></TextBox>
+                <TextBox x:Name="phoneTextBox" Grid.Column="1" Margin="0,24,25,24" FontSize="24"></TextBox>
             </Grid>
             <Grid Grid.Row="2">
                 <Grid.ColumnDefinitions>
@@ -39,7 +39,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" FontSize="24">E-Mail:</TextBlock>
-                <TextBox x:Name="emailTextBox" Grid.Column="1" Margin="0,24,25,24" HorizontalContentAlignment="Center" FontSize="24"></TextBox>
+                <TextBox x:Name="emailTextBox" Grid.Column="1" Margin="0,24,25,24" FontSize="24"></TextBox>
             </Grid>
             <Grid Grid.Row="3">
                 <Grid.ColumnDefinitions>
@@ -47,7 +47,7 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <TextBlock Grid.Column="0" HorizontalAlignment="Left" Margin="40,0,0,0" FontSize="24">Адрес:</TextBlock>
-                <TextBox x:Name="adresTextBox" Grid.Column="1" Margin="0,24,25,24" HorizontalContentAlignment="Center" FontSize="24"/>
+                <TextBox x:Name="adresTextBox" Grid.Column="1" Margin="0,24,25,24" FontSize="24"/>
             </Grid>
             <Button x:Name="makeOrderButton" Grid.Row="4" Content="ОФОРМИТЬ ЗАКАЗ" Margin="25" FontSize="24" Background="#FFCDB47F" Foreground="White" Width="280" Click="makeOrderButton_Click"></Button>
         </Grid>

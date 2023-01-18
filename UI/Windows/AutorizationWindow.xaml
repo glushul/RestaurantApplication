@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RestaurantApp.UI.Windows"
         mc:Ignorable="d"
-        Title="Авторизация" Height="350" Width="600" WindowStartupLocation="CenterScreen">
+        Title="Авторизация" Height="350" Width="600" WindowStartupLocation="CenterScreen" Icon="/UI/Windows/userIcon.png">
     <Grid Background="#FFF1EEEA">
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>

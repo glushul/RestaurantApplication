@@ -186,6 +186,17 @@
   <ItemGroup>
     <Resource Include="UI\Pages\Images\delivery.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="UI\Windows\Images\userIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Windows\Images\cartIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Windows\userIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\Windows\cartIcon.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
